@@ -1,0 +1,59 @@
+- bugs
+    - [X] bug: prevent very fast steering on low speed
+    - [ ] image rotate broken visuals
+
+- overall
+    - [ ] adjust values to size
+    - [ ] no hardcode, adjustable
+- steering
+    - raw input (keypress)
+        - [X] smooth steering
+        - [X] turn left to right faster, when not far from center
+    - input (limited steer)
+        - [X] more speed, less steering
+        - [X] less limit when hit 50% of maxspeed
+        - [X] low steering on low speed
+    - output (wheel output, grip)
+        - [ ] steer lock (when forcing or too quickly)
+            - [ ] hard lock on mid speed, less lock on high or low speed
+- power
+    - acceleration
+        - [X] topspeed
+        - [ ] acceleration similar to example graph
+            - low rev range = mid acceleration
+            - mid rev range = best acceleration
+            - high rev range = lowest acceleration
+        - [X] worse acceleration while steering
+        - [ ] wheelspin (high torque low grip)
+        - [ ] TC
+    - deceleration
+        - [ ] deceleration similar to example graph
+- brakes
+    - [X] smooth brake input (braking force)
+    - [X] worse braking while steering (temporary, abs like, must be improved)                                                !!!
+    - [ ] wheel lockup
+        - [ ] when too much brake pressure (with low grip)
+        - [ ] when steering and braking
+    - [ ] ABS
+    - [ ] trail braking (just the right brake force)
+            - slower braking
+            - quicker turning
+- parameters
+    - [ ] track condition (type, temperature)
+    - [ ] tyre condition (type, wear, temperature)
+
+
+
+
+- lenkung
+    - [X] smooth lenkung
+    - [ ] smooth lenk speed
+    - [X] lenkung nicht zu viel limitieren
+- leistung
+    - [X] topspeed
+    - [ ] smooth acceleration
+    - [ ] langsame acceleration bei lenkung
+- bremsen
+    - [ ] schlechteres bremsen bei kurven
+- visuals
+    - [ ] auto kommt aus andere seite raus
